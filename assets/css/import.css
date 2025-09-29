@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-Orbitron: "Orbitron", sans-serif;
+}
+.btn-float {
+  animation: float-yo 3.8s ease-in-out infinite;
+  will-change: transform, filter;
+  filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.45));
+}
+@keyframes float-yo {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-0.8deg) scale(1.03);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+button:hover .btn-float {
+  filter: drop-shadow(0 10px 30px rgba(255, 255, 255, 0.18));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-float {
+    animation: none;
+  }
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
+body {
+  scrollbar-width: thin; /* thin | auto */
+  scrollbar-color: rgba(255, 255, 255, 0.9) transparent; /* thumb | track */
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.85));
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06) inset, 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08) inset, 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+html::-webkit-scrollbar-corner {
+  background: transparent;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Quorwox Wars Gameplay - Explore character classes, weapons, and combat mechanics">
+    <meta name="keywords" content="quorwox, gameplay, characters, weapons, space combat">
+    <meta name="author" content="Quorwox Team">
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    <meta name="theme-color" content="#000000">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//unpkg.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <title>Quorwox Wars | Roadmap</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.jpg"
+      type="image/x-icon"
+    />
+    
+    <link rel="preload" href="./assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/css/style.css"></noscript>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+  </head>
+
+  <body
+    class="bg-black text-white overflow-x-hidden font-Orbitron antialiased selection:bg-white/10"
+  >
+    <header
+      class="fixed w-full justify-center py-1 flex items-center px-3 bg-black/50 backdrop-blur-[8px] z-60"
+      data-aos="fade-down"
+      data-aos-duration="800"
+    >
+      <div class="flex w-full max-w-[1440px] items-center justify-between">
+        <div class="flex items-center gap-3" data-aos="fade-right" data-aos-delay="200">
+          <img src="./assets/img/logo.jpg" class="max-w-[50px]" alt="Quorwox Logo" loading="eager" width="50" height="50" />
+        </div>
+        <ul class="flex items-center gap-5 z-50" data-aos="fade-down" data-aos-delay="350">
+          <li>
+            <a
+              href="index.html"
+              class="text-white z-50 hover:opacity-75 transition-all duration-300  font-Orbitron"
+              data-aos="fade-down"
+              data-aos-delay="400"
+              >Home</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="roadmap.html"
+              class="text-white z-50 hover:opacity-75 transition-all duration-300  font-Orbitron"
+              data-aos="fade-down"
+              data-aos-delay="450"
+              >Roadmap</a
+            >
+          </li>
+          <li class="flex flex-col items-center">
+            <a
+              href="gameplay.html"
+              class="text-white z-50 text-shadow-[0_0px_15px_white] hover:opacity-75 transition-opacity ease-in-out duration-200  font-Orbitron"
+              data-aos="fade-down"
+              data-aos-delay="500"
+              >Gameplay</a
+            >
+            <div class="flex w-full h-[1px] bg-white"></div>
+          </li>
+          <li>
+            <a
+              href="https://quorwox.gitbook.io/quorwox/"
+              class="text-white z-50 hover:opacity-75 transition-all duration-300  font-Orbitron"
+              data-aos="fade-down"
+              data-aos-delay="550"
+              >Gitbook</a
+            >
+          </li>
+        </ul>
+        <div class="flex items-center gap-5" data-aos="fade-left" data-aos-delay="200">
+          <button
+            class="flex hover:bg-black/15 transition-all duration-300 flex-col items-center border-white/5 border rounded-xl py-1 px-3"
+          >
+            <a
+              href="download.html"
+              class="text-white z-50 hover:opacity-75 transition-all duration-300  font-Orbitron"
+              >Download</a
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="relative overflow-hidden">
+      <!-- фоновые звёзды -->
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="none"
+        aria-hidden="true"
+        loading="lazy"
+      >
+        <source src="./assets/video/stars.mp4" type="video/mp4" />
+      </video>
+      <div
+        class="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black"
+      ></div>
+
+      <!-- заголовок -->
+      <div class="relative z-10 pt-28 pb-6">
+       
+        <video
+            class="mx-auto h-[500px] w-auto opacity-80"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            aria-label="Gameplay intro"
+            loading="lazy"
+          >
+            <source src="./assets/video/gameplay.mp4" type="video/mp4" />
+          </video>
+      </div>
+
+      <!-- интро-видео -->
+      <div class="relative z-50">
+        <div
+          class="overflow-hidden w-full flex justify-center"
+        >
+          <video
+            class="w-full h-full object-cover aspect-video max-w-[1504px]"
+            controls
+            preload="metadata"
+            aria-label="Gameplay intro"
+            loading="lazy"
+          >
+            <source src="./assets/video/intro.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <!-- Character Classes -->
+      <div class="relative z-10 container mx-auto px-4 mt-16">
+       
+
+        <!-- витрина (3D модели) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- card 1 -->
+          <div
+            class="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_10px_40px_rgba(0,0,0,.5)] hover:scale-105 transition-transform duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="relative aspect-square">
+              <video
+                class="w-full h-full object-cover"
+                muted
+                loop
+                autoplay
+                preload="none"
+                loading="lazy"
+              >
+                <source src="./assets/video/npc1.mp4" type="video/mp4" />
+              </video>
+              <div
+                class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent"
+              >
+                <div class="text-sm font-bold tracking-wide font-Orbitron">Human Soldier</div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_10px_40px_rgba(0,0,0,.5)] hover:scale-105 transition-transform duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="relative aspect-square">
+              <video
+                class="w-full h-full object-cover"
+                muted
+                loop
+                autoplay
+                preload="none"
+                loading="lazy"
+              >
+                <source src="./assets/video/npc2.mp4" type="video/mp4" />
+              </video>
+              <div
+                class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent"
+              >
+                <div class="text-sm font-bold tracking-wide font-Orbitron">Mutant Raider</div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_10px_40px_rgba(0,0,0,.5)] hover:scale-105 transition-transform duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="relative aspect-square">
+              <video
+                class="w-full h-full object-cover"
+                muted
+                loop
+                autoplay
+                preload="none"
+                loading="lazy"
+              >
+                <source src="./assets/video/npc3.mp4" type="video/mp4" />
+              </video>
+              <div
+                class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent"
+              >
+                <div class="text-sm font-bold tracking-wide font-Orbitron">
+                  Synthetic Unit
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- список -->
+        <ul class="mt-5 space-y-2 text-white/90 text-sm" data-aos="fade-up" data-aos-delay="400">
+          <li>
+            • <b>Human Soldier</b> – versatile fighter, perfect for beginners.
+          </li>
+          <li>• <b>Mutant Raider</b> – aggressive melee combat style.</li>
+          <li>
+            • <b>Synthetic Unit</b> – high defense and team support abilities.
+          </li>
+          <li class="text-white/70">Showcase with 3D character models.</li>
+        </ul>
+      </div>
+
+      <!-- Weapons & Equipment -->
+      <div class="relative z-50 container mx-auto px-4 mt-24">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- gun 1 -->
+          <div
+            class="overflow-hidden hover:scale-105 transition-transform duration-300 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_10px_40px_rgba(0,0,0,.5)]"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="relative aspect-square">
+              <video
+                class="w-full h-full object-cover"
+                muted
+                loop
+                autoplay
+                preload="none"
+                loading="lazy"
+              >
+                <source src="./assets/video/gun1.mp4" type="video/mp4" />
+              </video>
+              <div
+                class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent"
+              >
+                <div class="text-sm font-bold tracking-wide font-Orbitron">Plasma Rifle</div>
+              </div>
+            </div>
+          </div>
+          <!-- gun 2 -->
+          <div
+            class="overflow-hidden hover:scale-105 transition-transform duration-300 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_10px_40px_rgba(0,0,0,.5)]"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="relative aspect-square">
+              <video
+                class="w-full h-full object-cover"
+                muted
+                loop
+                autoplay
+                preload="none"
+                loading="lazy"
+              >
+                <source src="./assets/video/gun2.mp4" type="video/mp4" />
+              </video>
+              <div
+                class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent"
+              >
+                <div class="text-sm font-bold tracking-wide font-Orbitron">
+                  Heavy Machine Gun
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- gun 3 -->
+          <div
+            class="overflow-hidden hover:scale-105 transition-transform duration-300 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_10px_40px_rgba(0,0,0,.5)]"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="relative aspect-square">
+              <video
+                class="w-full h-full object-cover"
+                muted
+                loop
+                autoplay
+                preload="none"
+                loading="lazy"
+              >
+                <source src="./assets/video/gun3.mp4" type="video/mp4" />
+              </video>
+              <div
+                class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent"
+              >
+                <div class="text-sm font-bold tracking-wide font-Orbitron">
+                  Sniper Railgun
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="mt-5 space-y-2 text-white/90 text-sm mb-12" data-aos="fade-up" data-aos-delay="400">
+          <li>• Plasma Rifle – rapid mid-range bursts.</li>
+          <li>• Heavy Machine Gun – massive area damage, slower reload.</li>
+          <li>• Sniper Railgun – precise long-range shots.</li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+    <script>
+      // Initialize AOS when loaded
+      function initAOS() {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+          });
+        } else {
+          setTimeout(initAOS, 100);
+        }
+      }
+      
+      // Page transition animations
+      document.addEventListener('DOMContentLoaded', function() {
+        // Initialize AOS
+        initAOS();
+        
+        // Add fade-in animation to main content
+        const mainContent = document.querySelector('body');
+        mainContent.classList.add('fade-in-up');
+        
+        // Add staggered animations to elements
+        const header = document.querySelector('header');
+        const sections = document.querySelectorAll('section');
+        
+        if (header) {
+          header.classList.add('fade-in-up', 'stagger-1');
+        }
+        
+        sections.forEach((section, index) => {
+          section.classList.add('fade-in-up', `stagger-${index + 2}`);
+        });
+
+        // Optimize video loading and autoplay
+        const videos = document.querySelectorAll('video');
+        const videoObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const video = entry.target;
+              if (video.preload === 'none') {
+                video.preload = 'metadata';
+              }
+              // Add delay for autoplay
+              video.addEventListener('loadeddata', function() {
+                setTimeout(() => {
+                  if (video.paused) video.play().catch(() => {});
+                }, 500);
+              });
+              videoObserver.unobserve(video);
+            }
+          });
+        });
+        videos.forEach(video => videoObserver.observe(video));
+      });
+
+      // Smooth page transitions for navigation links
+      document.querySelectorAll('a[href$=".html"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const href = this.getAttribute('href');
+          
+          // Add exit animation
+          document.body.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
+          document.body.style.opacity = '0';
+          document.body.style.transform = 'translateY(-20px)';
+          
+          // Navigate after animation
+          setTimeout(() => {
+            window.location.href = href;
+          }, 300);
+        });
+      });
+    </script>
+  </body>
+</html>

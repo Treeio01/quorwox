@@ -1,0 +1,5 @@
+node_modules
+
+# Large video files that exceed GitHub limits
+assets/video/output.mp4
+assets/video/intro.mp4

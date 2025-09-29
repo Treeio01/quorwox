@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Quorwox Wars - Revolutionary Web3 space combat game with blockchain integration">
+    <meta name="keywords" content="quorwox, web3, blockchain, space game, nft, crypto gaming">
+    <meta name="author" content="Quorwox Team">
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    <meta name="theme-color" content="#000000">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//unpkg.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <title>Quorwox Wars</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.jpg"
+      type="image/x-icon"
+    />
+    
+    <link rel="preload" href="./assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/css/style.css"></noscript>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
+  </head>
+
+  <body
+    class="bg-black text-white overflow-x-hidden font-Orbitron antialiased selection:bg-white/10"
+  >
+    <header
+      class="fixed w-full justify-center py-1 flex items-center px-3 bg-black/50 backdrop-blur-[8px] z-60"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
+      <div class="flex w-full max-w-[1440px] items-center justify-between">
+        <div class="flex items-center gap-3" data-aos="fade-right" data-aos-delay="200">
+          <img src="./assets/img/logo.jpg" class="max-w-[50px]" alt="Quorwox Logo" loading="eager" width="50" height="50" />
+        </div>
+        <ul class="flex items-center gap-5 z-50" data-aos="fade-down" data-aos-delay="400">
+          <li class="flex flex-col items-center">
+            <a
+              href="index.html"
+              class="text-white z-50 text-shadow-[0_0px_15px_white] hover:opacity-75 transition-all duration-300  font-Orbitron"
+              >Home</a
+            >
+            <div class="flex w-full h-[1px] bg-white"></div>
+          </li>
+
+          <li>
+            <a
+              href="roadmap.html"
+              class="text-white z-50 hover:opacity-75 transition-all duration-300  font-Orbitron"
+              >Roadmap</a
+            >
+          </li>
+          <li>
+            <a
+              href="gameplay.html"
+              class="text-white z-50 hover:opacity-75 transition-all duration-300  font-Orbitron"
+              >Gameplay</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://quorwox.gitbook.io/quorwox/"
+              class="text-white z-50 hover:opacity-75 transition-all duration-300  font-Orbitron"
+              >Gitbook</a
+            >
+          </li>
+        </ul>
+        <div class="flex items-center gap-5" data-aos="fade-left" data-aos-delay="600">
+          <button
+            class="flex hover:bg-black/15 transition-all duration-300 flex-col items-center border-white/5 border rounded-xl py-1 px-3"
+          >
+            <a
+              href="download.html"
+              class="text-white z-50 hover:opacity-75 transition-all duration-300  font-Orbitron"
+              >Download</a
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section class="relative min-h-screen overflow-hidden">
+      <!-- видео фоном -->
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="none"
+        poster="./assets/img/hero-poster.jpg"
+        aria-hidden="true"
+        loading="lazy"
+      >
+        <source src="./assets/video/output.mp4" type="video/mp4" />
+      </video>
+
+      <div
+        class="pointer-events-none w-full min-h-[20px] bottom-[-15px] left-1/2 -translate-x-1/2 absolute bg-gradient-to-b bg-black blur-[4px]"
+      ></div>
+
+      <button
+        onclick="window.location.href='download.html'"
+        class="max-w-[150px] cursor-pointer btn-float block z-50 hover:scale-110 transition-transform ease duration-200 cursor-pointer absolute left-[20%] bottom-[15%]"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="none"
+          class="rounded-full"
+          src="./assets/video/button-download.mp4"
+          alt=""
+          loading="lazy"
+        />
+      </button>
+    </section>
+
+    <section class="relative min-h-screen">
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="none"
+        poster="./assets/img/about-poster.jpg"
+        aria-hidden="true"
+        loading="lazy"
+      >
+        <!-- <source src="./assets/video/about.webm" type="video/webm" /> -->
+        <source src="./assets/video/about.mp4" type="video/mp4" />
+      </video>
+
+      <div
+        class="pointer-events-none z-60 w-full min-h-[20px] bottom-[-15px] left-1/2 -translate-x-1/2 absolute bg-gradient-to-b bg-black blur-[4px]"
+      ></div>
+
+      <div
+        class="relative z-10 justify-end container mx-auto px-4 pt-[400px] min-h-screen flex items-center"
+      >
+        <div
+          class="max-w-3xl bg-black/35 backdrop-blur-[4px] border border-white/10 rounded-3xl p-3 md:p-4 shadow-[0_20px_80px_rgba(0,0,0,0.6)]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <p
+            class="text-sm font-medium text-center md:text-sm leading-relaxed text-white/90"
+            data-aos="fade-in"
+            data-aos-delay="400"
+          >
+            In a rapidly evolving universe where blockchain technologies are
+            combined with gaming worlds, Quorwox is becoming a pioneer among
+            space platforms. The project opens up the possibilities of Binance
+            Smart Chain (BSC) and Ethereum (ETH), creating a unique ecosystem of
+            interstellar adventures. Quorwox implements blockchain to ensure
+            transparency, security, and increased player engagement in the space
+            community of the future.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="relative min-h-screen overflow-hidden pt-[300px]">
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+      
+        poster="./assets/img/about-poster.jpg"
+        aria-hidden="true"
+        
+      >
+        <!-- <source src="./assets/video/about.webm" type="video/webm" /> -->
+        <source src="./assets/video/coming.mp4" type="video/mp4" />
+      </video>
+      <div
+        class="relative z-10 justify-start container mx-auto px-4 pt-[400px] min-h-screen flex items-center"
+      >
+        <div
+          class="max-w-3xl bg-black/35 backdrop-blur-[4px] border border-white/10 rounded-3xl p-3 md:p-4 shadow-[0_20px_80px_rgba(0,0,0,0.6)]"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <p
+            class="text-sm font-medium text-center md:text-sm leading-relaxed text-white/90"
+            data-aos="fade-in"
+            data-aos-delay="400"
+          >
+            We are planning to release our web3 project on mobile devices to
+            increase the number of our players.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
+    <script>
+      // Initialize AOS when loaded
+      function initAOS() {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+          });
+        } else {
+          setTimeout(initAOS, 100);
+        }
+      }
+      
+      // Page transition animations
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize AOS
+        initAOS();
+        
+        // Add fade-in animation to main content
+        const mainContent = document.querySelector("body");
+        mainContent.classList.add("fade-in-up");
+
+        // Add staggered animations to elements
+        const header = document.querySelector("header");
+        const sections = document.querySelectorAll("section");
+
+        if (header) {
+          header.classList.add("fade-in-up", "stagger-1");
+        }
+
+        sections.forEach((section, index) => {
+          section.classList.add("fade-in-up", `stagger-${index + 2}`);
+        });
+        
+        // Optimize video loading
+        const videos = document.querySelectorAll('video[preload="none"]');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const video = entry.target;
+              video.preload = 'metadata';
+              observer.unobserve(video);
+            }
+          });
+        });
+        videos.forEach(video => observer.observe(video));
+      });
+
+      // Smooth page transitions for navigation links
+      document.querySelectorAll('a[href$=".html"]').forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const href = this.getAttribute("href");
+
+          // Add exit animation
+          document.body.style.transition =
+            "opacity 0.3s ease-out, transform 0.3s ease-out";
+          document.body.style.opacity = "0";
+          document.body.style.transform = "translateY(-20px)";
+
+          // Navigate after animation
+          setTimeout(() => {
+            window.location.href = href;
+          }, 300);
+        });
+      });
+    </script>
+  </body>
+</html>
